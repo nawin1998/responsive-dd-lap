@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+}
+a{
+    color: black;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: blue;
+    position: relative;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    position:absolute;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+.lap{
+    font-size: xx-large;
+    font-weight: 800;
+    top: 5px;
+    left: 105px;
+    position: absolute;
+}
+.top{
+    font-size: x-large;
+    font-weight: 500;
+    top: 40px;
+    left: 85px;
+    position: absolute;
+}
+.navlinks{
+    margin-left: 30%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    width: 50%; 
+    font-size: x-large;     
+}
+.dropdown{
+    display: none;
+}
+.navlinks li:hover .dropdown{
+    display: block;
+    position: relative;
+    color: black;
+    text-align: center;
+    margin-top: 23px;
+    transform: translateX(-5px);
+    line-height: 2;
+    
+}
+.dropdown ul li{
+    width: 100%;
+    padding: 10px;
+}
+.dropdown li a:hover{
+    background-color: rgb(229, 62, 62);
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+}
+.dropdown li:hover .dropdown-menu{
+    display: block;
+    margin-left: 50px;
+    transform: translateX(80px);
+    margin-top: -50px;
+    color: black;
+    justify-content: space-evenly;
+    text-align: center;
+    line-height: 1;
+}
+.dropdown-menu ul li{
+    width: 100%;
+    padding: 10px;
+}
+.dropdown-menu li a:hover{
+    background-color: blueviolet;
+}
+button{
+    top: 15px;
+    left: 85%;
+    position: absolute;
+    padding: 15px 15px;
+    font-size: large;
+    border-radius: 5px;
+}
+@media only screen and (min-width:320px) and (max-width:430px){
+    header{
+        width: 100%;
+    }
+    .logo{
+        height: 1rem;
+        width: 1rem;
+        position: absolute;
+        margin-right: 3rem;
+    }
+    .lap{
+        font-size: 20px;
+        top: 10px;
+    }
+    .top{
+        font-size: 20px;
+    }
+    .navlinks{
+        display: inline-block;
+        flex-direction: column;
+        margin-top: 25%;
+        margin-left: 3rem;
+        font-size: 15px;
+    }
+    .dropdown{
+       bottom: 1.4rem;
+    }
+    .dropdown-menu{
+        right: 4rem;
+        top: 8.5rem;
+    }
+    button{
+        position: absolute;
+        top: 20rem;
+        left: 3rem;
+        padding: 5px;
+    }   
+}
+@media screen and (min-width:450px) and (max-width:570px){
+    .navlinks{
+        float: none;
+        display: block;
+        position: absolute;
+        top: 3rem;
+    }
+    .dropdown{
+        bottom: 2rem;
+    }
+    .dropdown-menu{
+        left: 1rem;
+    }
+    button{
+        float: none;
+        display: block;
+        align-items: center;
+        top: 24rem;
+        left: 1rem;
+    }
+}
+    
+
+
+
+
+
+
+
